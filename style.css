@@ -1,0 +1,289 @@
+@font-face {
+  font-family: Try Clother;
+  src: url(./fonts/try_clother.ttf);
+}
+
+:root {
+  --background: rgb(43, 178, 70);
+  --blue: blue;
+  --black: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Try Clother;
+  color: white;
+  overflow: hidden;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1220px;
+}
+.first-page {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--background);
+  text-align: center;
+}
+
+.first-page__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 95vh;
+  position: relative;
+  padding-bottom: 640px;
+  z-index: 10;
+}
+
+.first-page__header {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.first-page__header-link {
+  width: 22.5%;
+}
+
+.first-page__header-link-image {
+  width: 100%;
+}
+
+.first-page__header-text {
+  width: 72.5%;
+  font-size: 25px;
+}
+.first-page__title {
+  width: 50%;
+  margin: 0 auto 60px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.first-page-button {
+  width: 50%;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: var(--black);
+  opacity: 0.7;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.first-page-button-link {
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.first-page__contact {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.first-page__contact-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.first-page__contact-link-container-img {
+  width: 5%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-page__contact-link-img {
+  width: 100%;
+}
+
+.first-page__contact-link__text {
+  font-size: 20px;
+}
+
+.first-page-bottom-raketa {
+  width: 250px;
+  position: absolute;
+  height: 305px;
+  bottom: 350px;
+  z-index: 1;
+  left: 70%;
+  overflow: hidden;
+}
+
+.first-page-bottom-raketa-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.first-page__contacts {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 150px;
+  z-index: 1;
+}
+
+.first-page__contacts-link {
+  width: 18%;
+}
+
+.first-page__contacts-link-image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.first-page__bottom {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.first-page__bottom-img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  .first-page__container {
+    padding-bottom: 470px;
+  }
+
+  .first-page__header {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+
+  .first-page__header-text {
+    font-size: 18px;
+  }
+
+  .first-page__title {
+    width: 90%;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .first-page__contact {
+    width: 90%;
+  }
+
+  .first-page__contact-link__text {
+    font-size: 18px;
+  }
+
+  .first-page-button {
+    width: 90%;
+  }
+
+  .first-page-button-link {
+    font-size: 18px;
+  }
+
+  .first-page-bottom-raketa {
+    width: 200px;
+    position: absolute;
+    height: 250px;
+    bottom: 260px;
+    z-index: 1;
+    left: 60%;
+  }
+
+  .first-page__bottom {
+    height: 375px;
+  }
+}
+
+@media (max-width: 280px) {
+  .first-page__container {
+    padding-bottom: 555px;
+  }
+
+  .first-page {
+    padding-top: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .first-page__header {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .first-page__header-link {
+    width: 25%;
+  }
+
+  .first-page__header-text {
+    width: 75%;
+  }
+
+  .first-page__title {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .first-page__contact {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .first-page__contact-link-container-img {
+    width: 10%;
+    margin-right: 5px;
+  }
+
+  .first-page-button {
+    width: 90%;
+  }
+
+  .first-page-button-link {
+    font-weight: 500;
+  }
+
+  .first-page-bottom-raketa {
+    width: 125px;
+    position: absolute;
+    height: 150px;
+    bottom: 225px;
+    z-index: 1;
+    left: 55%;
+  }
+
+  .first-page__bottom {
+    width: 100%;
+    height: 300px;
+  }
+}
